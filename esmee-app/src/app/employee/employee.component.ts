@@ -22,7 +22,7 @@ export class EmployeeComponent implements OnInit {
     }
 
     getData(data:NgForm){
-      console.log(data);
+      console.log(data.value);
     }
 
   constructor() { }

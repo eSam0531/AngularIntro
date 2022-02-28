@@ -7,18 +7,18 @@
 
 <button (click) = "getValue(box.value)">Click Me</button>
     Box value is: {{displayValue}}
-
+    <br/>
     <button (click) = "counter('add')">++</button>
     Count value is: {{count}}
     <button (click) = "counter('minus')">--</button>
     
 <h1>Register User</h1>
 <form #basicForm="ngForm" (submit)="getData(basicForm)">
-    <input type = "text" ngModel name="user" placeholder="Enter user name"/>
+    <input type = "text" name="user" ngModel placeholder="Enter user name"/>
     <br/>
-    <input type = "email" ngModel name="email" placeholder="Enter email"/>
+    <input type = "email"  name="email"  ngModel placeholder="Enter email"/>
     <br/>
-    <input type = "password" ngModel name="password" placeholder="Enter password"/>
+    <input type = "password"  name="password"ngModel placeholder="Enter password"/>
     <br/>
     <button>Register</button>
 </form>
